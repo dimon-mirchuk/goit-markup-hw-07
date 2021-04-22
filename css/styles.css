@@ -11,7 +11,7 @@
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body {
+.body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -55,7 +55,7 @@ p {
 
 /* components */
 
-.container {
+.body__container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -77,15 +77,15 @@ p {
   line-height: 1.19;
 }
 
-.logo-web {
+.logo__web {
   color: var(--accent);
 }
 
-.header .logo {
+.logo--color-black {
   color: var(--black-color);
 }
 
-.footer .logo {
+.logo--color-white {
   color: var(--white-color);
 }
 
@@ -122,36 +122,36 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
-.header .container,
+.header .body__container,
 .navigation,
-.nav-links,
-.header-contacts {
+.navigation__list,
+.header-contact__list {
   display: flex;
   align-items: center;
 }
 
-.logo {
+.header__logo {
   margin-right: 93px;
 }
 
-.nav-link {
+.navigation__link {
   color: var(--heading-color);
 }
 
-.nav-links .item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-contacts {
+.header-contact__list {
   margin-left: auto;
 }
 
-.header-contacts .item + .item {
+.header-contact__item + .header-contact__item {
   margin-left: 50px;
 }
 
-.nav-link,
-.header-contact {
+.navigation__link,
+.header-contact__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -164,39 +164,39 @@ p {
   transition: color var(--duration) var(--cubic-bezier);
 }
 
-.header-contact {
+.header-contact__link {
   color: var(--text-color);
 }
 
-.header-contact .icon {
+.header-contact__icon {
   margin-right: 10px;
   fill: currentColor;
 
   transition: fill var(--duration) var(--cubic-bezier);
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.header-contact:hover,
-.header-contact:focus,
+.navigation__link:hover,
+.navigation__link:focus,
+.header-contact__link:hover,
+.header-contact__link:focus,
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent);
 }
 
-.header-contact:hover .icon,
-.header-contact:focus .icon {
+.header-contact__link:hover .icon,
+.header-contact__link:focus .icon {
   fill: var(--accent);
 }
 
-.current-page {
+.navigation__current-page {
   position: relative;
   color: var(--accent);
   font-weight: 500;
   letter-spacing: 0.02em;
 }
 
-.current-page::after {
+.navigation__current-page::after {
   content: "";
   position: absolute;
   right: 0;
@@ -657,7 +657,7 @@ p {
   transition: color var(--duration) var(--cubic-bezier);
 }
 
-.footer .container {
+.footer .body__container {
   display: flex;
   align-items: baseline;
 }
