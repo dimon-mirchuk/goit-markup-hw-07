@@ -460,17 +460,17 @@ p {
 
 /* feature-list */
 
-.feature-list {
+.feature__list {
   display: flex;
   margin: -15px;
 }
 
-.feature-list__item {
+.feature__item {
   width: 270px;
   margin: 15px;
 }
 
-.feature-list__title {
+.feature__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -478,7 +478,7 @@ p {
   color: var(--heading-color);
 }
 
-.feature-list__icon {
+.feature__icon {
   height: 120px;
   margin-bottom: 30px;
   display: flex;
@@ -528,16 +528,16 @@ p {
   background-color: var(--background-grey);
 }
 
-.member-description {
+.our-team__member-description {
   padding: 30px;
 }
 
-.team-list {
+.our-team__list {
   display: flex;
   margin: -15px;
 }
 
-.team-list .item {
+.our-team__item {
   max-width: 270px;
   margin: 15px;
   background-color: var(--white-color);
@@ -546,7 +546,7 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-member {
+.our-team__member-name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -555,14 +555,14 @@ p {
   color: var(--heading-color);
 }
 
-.team-position {
+.our-team__member-position {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
-.member-social-links {
+.our-team__social-links {
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -578,34 +578,34 @@ p {
   transition: background-color var(--duration) var(--cubic-bezier);
 }
 
-.member-social-links .icon {
+.social-link__icon {
   fill: var(--icon-color);
   transition: fill var(--duration) var(--cubic-bezier);
 }
 
-.member-social-links .social-link:hover .icon,
-.member-social-links .social-link:focus .icon {
+.social-link:hover .social-link__icon,
+.social-link:focus .social-link__icon {
   fill: var(--white-color);
 }
 
-.member-social-links .social-link:hover,
-.member-social-links .social-link:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent);
 }
 
 /* Regular clients */
 
-.regular-clients {
+.regular-clients__list {
   display: flex;
   padding: 0;
   margin: 0;
 }
 
-.regular-clients .item:not(:last-child) {
+.regular-clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-link {
+.regular-clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -616,18 +616,18 @@ p {
   transition: border-color var(--duration) var(--cubic-bezier);
 }
 
-.regular-clients .icon {
+.regular-clients__icon {
   fill: var(--icon-color);
   transition: fill var(--duration) var(--cubic-bezier);
 }
 
-.client-link:hover,
-.client-link:focus {
+.regular-clients__link:hover,
+.regular-clients__link:focus {
   border-color: var(--accent);
 }
 
-.client-link:hover .icon,
-.client-link:focus .icon {
+.regular-clients__link:hover .regular-clients__icon,
+.regular-clients__link:focus .regular-clients__icon {
   fill: var(--accent);
 }
 
@@ -650,7 +650,7 @@ p {
   color: var(--white-color);
 }
 
-.footer-contacts {
+.address__contacts {
   display: block;
   margin-top: 9px;
 
@@ -659,16 +659,16 @@ p {
   transition: color var(--duration) var(--cubic-bezier);
 }
 
-.footer .body__container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.member-social-links-thumb {
+.footer__social-links-thumb {
   margin-left: 70px;
 }
 
-.footer-title {
+.footer__title {
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
@@ -677,39 +677,30 @@ p {
   color: var(--white-color);
 }
 
-.footer-social-links {
+.footer__social-link-list {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-.footer-social-link:not(:last-child) {
+.footer__social-link-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-social-links .social-link {
+.footer__social-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-links .icon {
-  fill: var(--white-color);
-}
-
-.footer-social-links .social-link:hover .icon,
-.footer-social-links .social-link:focus .icon {
-  fill: var(--white-color);
-}
-
-.footer-social-links .social-link:hover,
-.footer-social-links .social-link:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent);
 }
 
-.subscribe-thumb {
+.footer__subscribe-thumb {
   margin-left: auto;
 }
 
-.subscribe-input {
+.subscribe-form__input {
   width: 358px;
   padding: 15px 16px;
   font-size: 16px;
