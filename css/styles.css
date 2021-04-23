@@ -125,7 +125,7 @@ p {
 .header .body__container,
 .navigation,
 .navigation__list,
-.header-contact__list {
+.header-contact-list {
   display: flex;
   align-items: center;
 }
@@ -142,16 +142,16 @@ p {
   margin-right: 50px;
 }
 
-.header-contact__list {
+.header-contact-list {
   margin-left: auto;
 }
 
-.header-contact__item + .header-contact__item {
+.header-contact-list__item + .header-contact-list__item {
   margin-left: 50px;
 }
 
 .navigation__link,
-.header-contact__link {
+.header-contact-list__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -164,11 +164,11 @@ p {
   transition: color var(--duration) var(--cubic-bezier);
 }
 
-.header-contact__link {
+.header-contact-list__link {
   color: var(--text-color);
 }
 
-.header-contact__icon {
+.header-contact-list__icon {
   margin-right: 10px;
   fill: currentColor;
 
@@ -177,15 +177,15 @@ p {
 
 .navigation__link:hover,
 .navigation__link:focus,
-.header-contact__link:hover,
-.header-contact__link:focus,
+.header-contact-list__link:hover,
+.header-contact-list__link:focus,
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent);
 }
 
-.header-contact__link:hover .icon,
-.header-contact__link:focus .icon {
+.header-contact-list__link:hover .icon,
+.header-contact-list__link:focus .icon {
   fill: var(--accent);
 }
 
@@ -458,19 +458,19 @@ p {
   fill: var(--accent);
 }
 
-/* feature */
+/* feature-list */
 
-.feature {
+.feature-list {
   display: flex;
   margin: -15px;
 }
 
-.feature .item {
+.feature-list__item {
   width: 270px;
   margin: 15px;
 }
 
-.feature-title {
+.feature-list__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -478,16 +478,13 @@ p {
   color: var(--heading-color);
 }
 
-.feature-icon {
+.feature-list__icon {
   height: 120px;
   margin-bottom: 30px;
-  background-color: var(--background-grey);
-}
-
-.feature-icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--background-grey);
 }
 
 /* Our work */
@@ -496,17 +493,17 @@ p {
   padding-top: 0;
 }
 
-.our-work-lists {
+.our-work__list {
   display: flex;
   margin: -15px;
 }
 
-.our-work-list {
+.our-work__item {
   position: relative;
   margin: 15px;
 }
 
-.our-work-box {
+.our-work__box {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -517,7 +514,7 @@ p {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.our-work-title {
+.our-work__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
