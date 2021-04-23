@@ -733,11 +733,11 @@ p {
   margin-bottom: 50px;
 }
 
-.work-filter .item + .item {
+.work-filter__item + .work-filter__item {
   margin-left: 8px;
 }
 
-.filter-button {
+.work-filter__button {
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -753,8 +753,8 @@ p {
   transition-timing-function: var(--cubic-bezier);
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.work-filter__button:hover,
+.work-filter__button:focus {
   color: var(--white-color);
   background-color: var(--accent);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -769,15 +769,15 @@ p {
   margin: -15px;
 }
 
-.work-list .item {
+.work-list__item {
   margin: 15px;
   flex-basis: calc(100% / 3 - 30px);
   box-sizing: border-box;
   transition: box-shadow var(--duration) var(--cubic-bezier);
 }
 
-.work-list .item:hover,
-.work-list .item:focus {
+.work-list__item:hover,
+.work-list__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -802,12 +802,12 @@ p {
   line-height: 1.87;
 }
 
-.work-photo {
+.work-list__photo {
   position: relative;
   overflow: hidden;
 }
 
-.work-overlay {
+.work-list__overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -821,13 +821,13 @@ p {
   transition: transform var(--duration) var(--cubic-bezier);
 }
 
-.work-list .item:hover .work-overlay,
-.work-list .item:focus .work-overlay {
+.work-list__item:hover .work-list__overlay,
+.work-list__item:focus .work-list__overlay {
   transform: translateY(0);
   transition: transform var(--duration) var(--cubic-bezier);
 }
 
-.work-overlay .text {
+.work-list__text {
   padding: 0 24px;
   font-size: 18px;
   line-height: 1.56;
